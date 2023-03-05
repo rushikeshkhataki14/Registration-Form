@@ -1,0 +1,32 @@
+
+<div class="container pt-5 bord m-5">
+  <form [formGroup]="formdata" (ngSubmit)="submit(formdata.value)">
+    <h1>Please login to your account</h1>
+
+
+    <div class="form-outline mb-4">
+      <input type="Username" id="form2Example11" class="form-control"
+        placeholder="Phone number or email address"  name="Username"  formControlName="Username" />
+      <label class="form-label" for="form2Example11">Username</label>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="password" id="form2Example22" class="form-control"  name="password"
+       formControlName="password" />
+      <label class="form-label" for="form2Example22">Password</label>
+    </div>
+
+    <div class="text-center pt-1 mb-5 pb-1">
+      <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit" value="login" >login
+        </button>
+      <a class="text-muted" >Forgot password?</a>
+    </div>
+
+
+
+  </form>
+  <div class="d-flex align-items-center justify-content-center pb-4">
+    <p class="mb-0 me-2" id="demo">Don't have an account?</p>
+    <button  class="btn btn-outline-danger" routerLink="/register">Create new</button>
+  </div>
+</div>
